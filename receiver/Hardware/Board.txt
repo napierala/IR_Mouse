@@ -1,0 +1,4 @@
+Atmega8 lub podobne.
+INT0 - USB, reszta standard VUSB.
+INT1 - Odbiornik TSOP podczerwieni.
+Kwarc 16MHz.
