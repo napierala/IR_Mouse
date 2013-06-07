@@ -1,0 +1,15 @@
+# Atmel Studio DataBase #
+*.atsuo
+
+# Atmel Generated Files #
+*.d
+*.eep
+*.elf
+*.hex
+*.lss
+*.map
+*.o
+*.srec
+*.mk
+Makefile
+
