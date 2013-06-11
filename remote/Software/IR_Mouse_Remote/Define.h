@@ -1,7 +1,7 @@
 /*
- * Define.h
+ * define.h
  *
- * Created: 2013-04-11 19:59:04
+ * Created: 2012-12-24 21:11:03
  *  Author: Jedrzej Napierala
  */ 
 
@@ -9,22 +9,14 @@
 #ifndef DEFINE_H_
 #define DEFINE_H_
 
-#include "Clock_Speed.h"
+
+//czestotliwosc zegara
+#define F_CPU 1000000L
+
 
 typedef unsigned char byte ;
 typedef  unsigned int  uint ;
 
-typedef struct{
-	byte   buttonMask;
-	char    dx;
-	char    dy;
-	char    dWheel;
-}report_t;
-
-//Do report_t
-#define Right_Button 0
-#define Left_Button 1
-#define Middle_Button 2	
 
 //Bit = 0
 #define Clear_Bit(reg, bit) (reg&=~(1<<bit))

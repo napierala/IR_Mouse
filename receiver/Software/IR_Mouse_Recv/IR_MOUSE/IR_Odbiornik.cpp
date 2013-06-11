@@ -51,7 +51,7 @@ void IR_ODBIORNIK::detect()
 	// to ko?czy dzia?anie funkcji z b??dem
 	while( timerL<110){
 		
-		if(timerH>=2){ //Bylo 16
+		if(timerH>=16){ //Bylo 16
 			pakiet.status = false ; 
 			return ;
 		}
@@ -63,7 +63,7 @@ void IR_ODBIORNIK::detect()
 	// Je?li nie wykryje bitu startowego w ci?gu 131ms,
 	// to ko?czy dzia?anie funkcji z b??dem
 	while(RC5_IN){
-		if(timerH>=2){ //Bylo 16
+		if(timerH>=16){ //Bylo 16
 			pakiet.status = false ;
 			return ;
 		}

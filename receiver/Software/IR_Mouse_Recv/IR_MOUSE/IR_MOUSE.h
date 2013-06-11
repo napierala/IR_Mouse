@@ -18,28 +18,32 @@
 
 extern IR_ODBIORNIK ir_odbiornik;
 
+#define CZULOSC_MOUSE 5
+#define CZULOSC_SCRL 2
+
 class IR_MOUSE{
 public:
 
 	report_t		reportBuffer;
-	int				sinus;
-	int				cosinus;
-	byte   idleRate;   /* repeat rate for keyboards, never used for mice */
-	byte last_toggle ;
+	byte			idleRate;   /* repeat rate for keyboards, never used for mice */
+	byte			last_toggle ;
 	
 	IR_MOUSE(){
-		sinus = 7 << 6 ;
-		cosinus = 0 ;
 		//Cos innego niz 0 lub 1 na poczatek
 		last_toggle = 2 ;
+		ostatni_klawisz = IR_MOUSE_NONE;
+		ilosc_powtorzen_klawisza = 0 ;
 	}
 	~IR_MOUSE(){}
-		
-	void advanceCircleByFixedAngle();	
-	void TestMouseMove();
 	
 	void stworz_raport();
 	
+	void pusty_raport();
+	
+	//Przyspieszanie ruchu gdy jest caly czas nacisniete
+	byte ostatni_klawisz;
+	byte ilosc_powtorzen_klawisza;
+	byte getMnoznikPowtorzen(byte aktualny_klawisz);
 };
 
 

@@ -38,7 +38,7 @@ int __attribute__((noreturn)) main(void)
 		//Sprawdzamy czy jest prosba o raport
 		if(usbInterruptIsReady()){
 			/* called after every poll of the interrupt endpoint */
-			ir_mouse.advanceCircleByFixedAngle();
+			//ir_mouse.advanceCircleByFixedAngle();
 			//ir_mouse.TestMouseMove();
 			usbSetInterrupt((void *)&ir_mouse.reportBuffer, sizeof(ir_mouse.reportBuffer));
 		}

@@ -10212,6 +10212,13 @@ Es handelt sich hierbei um AK500 in horizontaler Ausführung.&lt;p&gt;
 <label x="25.4" y="17.78" size="1.778" layer="95"/>
 </segment>
 </net>
+<net name="PB4" class="0">
+<segment>
+<pinref part="IC1" gate="G$1" pin="PB4/PCINT4/ADC2"/>
+<wire x1="20.32" y1="66.04" x2="5.08" y2="66.04" width="0.1524" layer="91"/>
+<label x="5.08" y="66.04" size="1.778" layer="95"/>
+</segment>
+</net>
 <net name="VCC" class="0">
 <segment>
 <pinref part="IC1" gate="G$1" pin="VCC"/>
@@ -10480,11 +10487,6 @@ Es handelt sich hierbei um AK500 in horizontaler Ausführung.&lt;p&gt;
 <pinref part="FIRMWARE_UPGRADE" gate="1" pin="A"/>
 <wire x1="15.24" y1="30.48" x2="15.24" y2="35.56" width="0.1524" layer="91"/>
 <label x="15.24" y="35.56" size="1.778" layer="95" rot="R90"/>
-</segment>
-<segment>
-<pinref part="IC1" gate="G$1" pin="PB4/PCINT4/ADC2"/>
-<wire x1="20.32" y1="66.04" x2="5.08" y2="66.04" width="0.1524" layer="91"/>
-<label x="5.08" y="66.04" size="1.778" layer="95"/>
 </segment>
 </net>
 </nets>
